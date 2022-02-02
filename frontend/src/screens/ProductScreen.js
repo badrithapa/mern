@@ -29,8 +29,10 @@ const ProductScreen = () => {
               <Image src={product.image} alt={product.name} fluid></Image>
           </Col>
 
+        <Col>
+        <Row>
 
-          <Col md={3}>
+          <Col md={3} lg={6}>
               {/*name rating description etc */}
               <ListGroup variant="fluid">
                   <ListGroup.Item>
@@ -44,7 +46,7 @@ const ProductScreen = () => {
                   </ListGroup.Item>
               </ListGroup>
           </Col>
-          <Col md={3}>
+          <Col md={3} lg={6}>
               <Card>
                   <ListGroup variant="dark">
                       <ListGroup.Item variant="dark">
@@ -71,6 +73,16 @@ const ProductScreen = () => {
                       </ListGroup.Item>
                   </ListGroup>
               </Card>
+          </Col>
+        </Row>
+        <Row >
+            <Col className="mt-4 py-2">
+             {/* <h6> */}
+
+            {product.description}
+
+            </Col>
+        </Row>
           </Col>
 
 
